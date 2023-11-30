@@ -25,7 +25,7 @@ const RecommendationComponent = () => {
                 url = 'https://movie-recommedation-system-server.onrender.com/movies/recommendation';
             } else {
                 // Fetch a random movie suggestion from the server
-                url = 'https://movie-recommedation-system-server.onrender.com/movies/random'; // Update this URL as needed
+                url = '/movies/random'; // Update this URL as needed
             }
             const response = await axios.get(url, {
                 headers: {
