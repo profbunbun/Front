@@ -31,7 +31,7 @@ const MovieDetailsComponent = () => {
 
   const handleRateMovie = async (movieId, rating) => {
     try {
-      const response = await axios.post('https://sebackend-awzz.onrender.com/ratings', {
+      const response = await axios.post('/ratings', {
         movieId: movieId,
         rating: rating
       }, {
